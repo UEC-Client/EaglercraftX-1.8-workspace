@@ -722,7 +722,7 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback {
 			GlStateManager.popMatrix();
 		}
 
-		String lbl = "CREDITS.txt";
+		String lbl = "|";
 		int w = fontRendererObj.getStringWidth(lbl) * 3 / 4;
 
 		if (i >= (this.width - w - 4) && i <= this.width && j >= 0 && j <= 9) {
@@ -748,7 +748,7 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback {
 	 */
 	protected void mouseClicked(int par1, int par2, int par3) {
 		if (par3 == 0) {
-			String lbl = "CREDITS.txt";
+			String lbl = "|";
 			int w = fontRendererObj.getStringWidth(lbl) * 3 / 4;
 			if (par1 >= (this.width - w - 4) && par1 <= this.width && par2 >= 0 && par2 <= 10) {
 				String resStr = EagRuntime.getResourceString("/assets/eagler/CREDITS.txt");
