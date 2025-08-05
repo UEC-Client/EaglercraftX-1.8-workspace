@@ -28,10 +28,11 @@ eaglercraft.gui.exitKey=Use '%s' to close this screen!
 eaglercraft.gui.exitKeyRetarded=Use Backtick (`) to close this screen!
 eaglercraft.gui.continue=Continue
 
-eaglercraft.menu.forkOnGitlab=Fork on GitLab
+eaglercraft.menu.forkOnGitlab=Discord
 eaglercraft.menu.editProfile=Edit Profile
 eaglercraft.menu.openToLan=Invite
 eaglercraft.menu.closeLan=Stop Sharing
+eaglercraft.menu.message=Messages
 
 eaglercraft.editProfile.title=Edit Profile
 eaglercraft.editProfile.username=Username

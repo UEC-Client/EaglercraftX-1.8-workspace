@@ -13,6 +13,7 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 
+import net.minecraft.client.gui.GuiMessage;
 import net.lax1dude.eaglercraft.v1_8.EagRuntime;
 import net.lax1dude.eaglercraft.v1_8.EagUtils;
 import net.lax1dude.eaglercraft.v1_8.EaglerInputStream;
@@ -286,9 +287,9 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback {
 			this.addSingleplayerMultiplayerButtons(i, 24);
 		}
 
-		this.buttonList.add(new GuiButton(0, this.width / 2 - 100, i + 72 + 12, 98, 20,
+		this.buttonList.add(new GuiButton(0, this.width / 2 - 100, i + 77 + 17, 98, 20,
 				I18n.format("menu.options", new Object[0])));
-		this.buttonList.add(new GuiButton(4, this.width / 2 + 2, i + 72 + 12, 98, 20,
+		this.buttonList.add(new GuiButton(4, this.width / 2 + 2, i + 77 + 17, 98, 20,
 				I18n.format("menu.editProfile", new Object[0])));
 
 		this.buttonList.add(new GuiButtonLanguage(5, this.width / 2 - 124, i + 72 + 12));
@@ -321,6 +322,8 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback {
 		if (EaglercraftVersion.mainMenuEnableGithubButton) {
 			this.buttonList.add(
 					new GuiButton(14, this.width / 2 - 100, parInt1 + parInt2 * 2, I18n.format("menu.forkOnGitlab")));
+		this.buttonList.add(
+					new GuiButton(500, this.width / 2 - 100, parInt1 + parInt2 * 3, I18n.format("menu.message")));
 		} else {
 			if (EagRuntime.getConfiguration().isEnableDownloadOfflineButton()
 					&& (EagRuntime.getConfiguration().getDownloadOfflineButtonLink() != null
@@ -372,6 +375,10 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback {
 
 		if (parGuiButton.id == 14) {
 			EagRuntime.openLink(EaglercraftVersion.projectForkURL);
+		}
+
+		if (parGuiButton.id == 500) {
+			this.mc.displayGuiScreen(new GuiMessage());
 		}
 
 		if (parGuiButton.id == 11) {

@@ -13,7 +13,7 @@ public class EaglercraftVersion {
 	public static final String projectForkVersion = "1.0.0";
 	public static final String projectForkVendor = "UecDevs";
 	
-	public static final String projectForkURL = "https://gitlab.com/lax1dude/eaglercraftx-1.8";
+	public static final String projectForkURL = "https://discord.gg/axYfkJDJX8";
 	
 	//////////////////////////////////////////////////////////////////////
 	
@@ -22,7 +22,7 @@ public class EaglercraftVersion {
 	public static final String projectOriginRevision = "";
 	public static final String projectOriginVersion = "1.0.0";
 	
-	public static final String projectOriginURL = "https://gitlab.com/lax1dude/eaglercraftx-1.8"; // rest in peace
+	public static final String projectOriginURL = "https://discord.gg/axYfkJDJX8"; // rest in peace
 	
 	// EPK Version Identifier
 	
@@ -68,7 +68,7 @@ public class EaglercraftVersion {
 
 	public static final long demoWorldSeed = (long) "North Carolina".hashCode();
 
-	public static final boolean mainMenuEnableGithubButton = false;
+	public static final boolean mainMenuEnableGithubButton = true;
 
 	public static final boolean forceDemoMode = false;
 
