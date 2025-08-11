@@ -292,7 +292,6 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback {
 		this.buttonList.add(new GuiButton(4, this.width / 2 + 2, i + 78 + 18, 98, 20,
 				I18n.format("menu.editProfile", new Object[0])));
 
-		this.buttonList.add(new GuiButtonLanguage(5, this.width / 2 - 124, i + 72 + 12));
 
 		if (isFork) {
 			this.openGLWarning1 = EaglercraftVersion.mainMenuStringE;
@@ -355,10 +354,6 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback {
 	protected void actionPerformed(GuiButton parGuiButton) {
 		if (parGuiButton.id == 0) {
 			this.mc.displayGuiScreen(new GuiOptions(this, this.mc.gameSettings));
-		}
-
-		if (parGuiButton.id == 5) {
-			this.mc.displayGuiScreen(new GuiLanguage(this, this.mc.gameSettings, this.mc.getLanguageManager()));
 		}
 
 		if (parGuiButton.id == 1) {
