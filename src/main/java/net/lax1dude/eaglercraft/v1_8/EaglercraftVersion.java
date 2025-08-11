@@ -10,17 +10,17 @@ public class EaglercraftVersion {
 	/// Customize these to fit your fork:
 	
 	public static final String projectForkName = "UEC Client";
-	public static final String projectForkVersion = "1.0.0";
-	public static final String projectForkVendor = "UecDevs";
+	public static final String projectForkVersion = "1.0.1";
+	public static final String projectForkVendor = "MrNorshare";
 	
 	public static final String projectForkURL = "https://discord.gg/axYfkJDJX8";
 	
 	//////////////////////////////////////////////////////////////////////
 	
 	public static final String projectOriginName = "UEC Client";
-	public static final String projectOriginAuthor = "UecDevs";
+	public static final String projectOriginAuthor = "MrNorshare";
 	public static final String projectOriginRevision = "";
-	public static final String projectOriginVersion = "1.0.0";
+	public static final String projectOriginVersion = "1.0.1";
 	
 	public static final String projectOriginURL = "https://discord.gg/axYfkJDJX8"; // rest in peace
 	
